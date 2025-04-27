@@ -1,0 +1,56 @@
+/* Layout helpers */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flex-start {
+    display: flex;
+    align-items: center;
+  }
+  
+ 
+  .header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .header {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 12px ;
+  }
+  .header-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Logo */
+  .logo-link img {
+    display: block;
+  }
+  
+  /* App name */
+  .app-name {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 12px;
+    display: none;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .app-name {
+      display: inline;
+    }
+  }
+  

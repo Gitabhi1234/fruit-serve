@@ -1,0 +1,83 @@
+.user-button-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .user-avatar-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar-button {
+    position: relative;
+    border: 1px solid #ccc;
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d1d5db; /* Tailwind's gray-300 */
+  }
+  
+  .avatar-image {
+    position: absolute;
+    inset: 0;
+  }
+  
+  .avatar-img {
+    border-radius: 9999px;
+    object-fit: cover;
+  }
+  
+  .avatar-initial {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .menu-content {
+    width: 224px; /* w-56 = 14rem = 224px */
+    margin-right: 1rem;
+  }
+  
+  .menu-label {
+    width: 100%;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .user-name {
+    font-size: 0.875rem;
+    font-weight: bold;
+    line-height: 1.25;
+  }
+  
+  .user-email {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: #4b5563; /* Tailwind's gray-600 */
+    line-height: 1.25;
+  }
+  
+  .signout-item {
+    padding: 0;
+    margin-bottom: 4px;
+  }
+  
+  .signout-form {
+    width: 100%;
+  }
+  
+  .signout-button {
+    width: 100%;
+    padding: 16px 8px;
+    height: 16px;
+    justify-content: flex-start;
+  }
+  

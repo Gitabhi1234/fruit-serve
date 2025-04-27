@@ -1,0 +1,167 @@
+
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #222222;
+    --card: #ffffff;
+    --card-foreground: #222222;
+    --popover: #ffffff;
+    --popover-foreground: #222222;
+    --primary: #1a1a1a;
+    --primary-foreground: #f0f0f0;
+    --secondary: #e0e0e0;
+    --secondary-foreground: #1a1a1a;
+    --muted: #e0e0e0;
+    --muted-foreground: #6f6f6f;
+    --accent: #e0e0e0;
+    --accent-foreground: #1a1a1a;
+    --destructive: #ff4d4d;
+    --destructive-foreground: #ffffff;
+    --border: #d9d9d9;
+    --input: #d9d9d9;
+    --ring: #222222;
+    --radius: 8px;
+  }
+
+  .dark {
+    --background: #222222;
+    --foreground: #f0f0f0;
+    --card: #222222;
+    --card-foreground: #f0f0f0;
+    --popover: #222222;
+    --popover-foreground: #f0f0f0;
+    --primary: #f0f0f0;
+    --primary-foreground: #1a1a1a;
+    --secondary: #2b2b2b;
+    --secondary-foreground: #f0f0f0;
+    --muted: #2b2b2b;
+    --muted-foreground: #a6a6a6;
+    --accent: #2b2b2b;
+    --accent-foreground: #f0f0f0;
+    --destructive: #cc0000;
+    --destructive-foreground: #f0f0f0;
+    --border: #2b2b2b;
+    --input: #2b2b2b;
+    --ring: #d9d9d9;
+  }
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--border);
+    outline-color: var(--ring);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+  }
+}
+
+@layer utilities {
+  html.dark .upload-field .text-white {
+    color: #ffffff !important;
+  }
+
+  .upload-field .text-white {
+    color: #000 !important;
+  }
+
+  .flex {
+    @apply flex justify-center items-center bg-background text-foreground;
+  }
+
+  .font-bold {
+    @apply font-bold text-3xl;
+  }
+}
+
+.wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 16px;
+  width: 100%;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1-bold {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.h2-bold {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.h3-bold {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+body,html{
+  height: 100%;
+  margin: 0;
+}

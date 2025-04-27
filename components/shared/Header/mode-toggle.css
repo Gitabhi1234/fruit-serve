@@ -1,0 +1,37 @@
+.sun-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+    transform: rotate(0deg) scale(1);
+    transition: all 0.3s ease;
+  }
+  
+  .moon-icon {
+    position: absolute;
+    height: 1.2rem;
+    width: 1.2rem;
+    transform: rotate(90deg) scale(0);
+    transition: all 0.3s ease;
+  }
+  
+  /* Dark mode support */
+  .dark .sun-icon {
+    transform: rotate(-90deg) scale(0);
+  }
+  
+  .dark .moon-icon {
+    transform: rotate(0deg) scale(1);
+  }
+  
+  /* Visually hidden utility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
